@@ -10,7 +10,7 @@ A collection of scripts, registry modifications and potentially other things I u
 
 **Recursive/DirectoryListToClipboard:** adds an entry to the right click menu of explorer which places a list of the current directories contents on the clipboard - does not handle special characters in the path
 
-**Recuresiv/eDirectoryListToFiles.txt: ** adds an entry to the right click menu of explorer which places a list of the current directories contents in a new text files.txt file - does not handle special characters in the path
+**Recuresive/DirectoryListToFiles.txt:** adds an entry to the right click menu of explorer which places a list of the current directories contents in a new text files.txt file - does not handle special characters in the path
 
 **MapLocalToL:** adds an entry to the right click menu of explorer allowing the user to quickly map the selected directory to L drive
 
@@ -18,7 +18,7 @@ A collection of scripts, registry modifications and potentially other things I u
 
 **AltTabAeroPeakDelay** introduces a delay to the aero peak function initiated when using alt-tab on a Windows 7 machine as the default behaviour is distracting and slow
 
-**Windows 7 Libraries: ** there are 3 registry entries which manipulate whether libraries are enabled/disabled/hidden in Windows 7
+**Windows 7 Libraries:** there are 3 registry entries which manipulate whether libraries are enabled/disabled/hidden in Windows 7
 
 
 
