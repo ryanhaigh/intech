@@ -2,7 +2,7 @@
 @echo off
 
 :: Set variables
-set MODE=$~2
+set MODE=%~2
 ::set MODE=DRYRUN
 set HOST=BNE-FS01
 set JOB=%~1

@@ -10,7 +10,7 @@
 
 :: Set variables
 :: Second argument is the mode - either DRYRUN or blank (meaning execute)
-set MODE=$~2
+set MODE=%~2
 :: Expects to be running on the Brisbane file server and checks this later
 set HOST=BNE-FS01
 :: First argument is the directory name of the job - not the full path
