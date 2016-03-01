@@ -28,6 +28,8 @@ A collection of scripts, registry modifications and potentially other things I u
 
 **archive-job.bat:** archive projects/jobs when they are complete - copies to the archive location - copies new/missing/more recent files from the remote office servers - deletes the original files from all servers - marks the archived files read only - supports simulation through DRYRUN mode
 
+**copy-remote-job.bat:** a modified version of the archive job script used to copy more recent or new files from the remote office servers (Townsville and Perth) to the Brisbane server
+
 **dhcpinfo.bat:** queries the servers for information on dhcp scopes and leases
 
 **dhcpinfo-nopsexec.bat** queries the servers for information on dhcp scopes and leases but does not require psexec

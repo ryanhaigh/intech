@@ -8,6 +8,11 @@
 :: Note that the hardcoded paths refer to the temporary location currently used
 :: due to a failure of the Brisbane server raid array.
 
+:: Usage
+:: copy-remtote-job.bat "Job Directory" DRYRUN
+:: Where DRYRUN is optional and if not specified the script will execute the
+:: copy operation
+
 :: Set variables
 :: Second argument is the mode - either DRYRUN or blank (meaning execute)
 set MODE=%~2
@@ -33,7 +38,7 @@ if NOT %COMPUTERNAME%==%HOST% (
     echo The script will now exit
 ) else (
     echo.
-    echo The job to be archived is %JOB%
+    echo The job to be copied is %JOB%
     echo The current files are in %CURRENT%
     echo Missing and updated files from %PRT% 
     echo and %TVL% 
@@ -41,6 +46,7 @@ if NOT %COMPUTERNAME%==%HOST% (
     echo The log file will be %LOG%
     echo.
     
+
     if /I %MODE%==DRYRUN (
         echo The mode is set to dry run. Check the log file %ALTLOG%
         echo If you do not wish to proceeed, close the command prompt 
@@ -60,6 +66,7 @@ if NOT %COMPUTERNAME%==%HOST% (
         :: Open log
         notepad "%ALTLOG%"
     ) else (
+        :: MODE is not dryrun
         echo The mode is set to execute. If you do not wish to proceed, close 
         echo the command prompt window now
         pause
