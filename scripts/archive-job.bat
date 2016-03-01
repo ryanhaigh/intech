@@ -3,18 +3,18 @@
 
 :: Set variables
 set MODE=%~2
+::set MODE=EXEC
 ::set MODE=DRYRUN
 set HOST=BNE-FS01
 set JOB=%~1
 ::set JOB=1116 MRM Water Management
-set CURRENT=D:\Data\Jobs\%JOB%
+set CURRENT=E:\Restore\Data\Jobs\%JOB%
 set YEAR=%date:~10,4%
-set OLD=D:\Data\OLD\%YEAR%-%JOB%
+set OLD=E:\Restore\Data\OLD\%YEAR%-%JOB%
 set LOG=%OLD%\ARCHIVE.LOG
 set ALTLOG=%~dp0\ARCHIVE.LOG
 set PRT=\\10.52.8.12\Data\Jobs\%JOB%
 set TVL=\\10.52.4.12\Data\Jobs\%JOB%
-
 
 :: Check script is running on BNE file server
 ::if NOT %COMPUTERNAME%=="BNE-FS01" (
@@ -93,7 +93,6 @@ if NOT %COMPUTERNAME%==%HOST% (
         notepad "%LOG%"
     )
 )
-
 echo Script complete. Will now exit
 pause
 exit
