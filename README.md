@@ -26,6 +26,8 @@ A collection of scripts, registry modifications and potentially other things I u
 
 **add-printers.bat:** removes, installs and sets default printers
 
+**add-user.ps1:** adds a user to active directory and exchange
+
 **archive-job.bat:** archive projects/jobs when they are complete - copies to the archive location - copies new/missing/more recent files from the remote office servers - deletes the original files from all servers - marks the archived files read only - supports simulation through DRYRUN mode
 
 **copy-remote-job.bat:** a modified version of the archive job script used to copy more recent or new files from the remote office servers (Townsville and Perth) to the Brisbane server
@@ -33,6 +35,8 @@ A collection of scripts, registry modifications and potentially other things I u
 **dhcpinfo.bat:** queries the servers for information on dhcp scopes and leases
 
 **dhcpinfo-nopsexec.bat** queries the servers for information on dhcp scopes and leases but does not require psexec
+
+**disable-user.ps1:** disable an active directory user and grant access to their exchange mailbox
 
 **handle.bat:** uses sysinternals handle.exe to monitor and log which application has a handle on an open file
 
@@ -49,5 +53,7 @@ A collection of scripts, registry modifications and potentially other things I u
 **plcdiff.bat:** used with bzr-explorer and plc programming to call the appropriate comparison tool for the plc platform being used
 
 **plot-peaks.py:** process a csv file with northing, easting and elevation and plot the position and proximity of peaks
+
+**purge-users.ps1:** remove a user from active directory and exchange optionally keeping a copy of their mailbox
 
 **rtouch.bat:** recursively touch files in the current directory
